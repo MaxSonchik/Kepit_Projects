@@ -1,7 +1,7 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -I.
 TARGET = minesweeper
-SOURCES = main.c 
+SOURCES = main.c core/game.c ui/menu.c ui/display.c data/config.c
 
 $(TARGET): $(SOURCES)
 		$(CC) $(CFLAGS) -o ../build/$(TARGET) $(SOURCES)
